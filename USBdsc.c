@@ -61,7 +61,7 @@ const char configDescriptor1[]= {
     // Interface Descriptor
     0x09,                   // bLength - Descriptor size in bytes (09h)
     0x04,                   // bDescriptorType - The constant Interface (04h)
-    0x01,                      // bInterfaceNumber - Number identifying this interface
+    0x00,// bInterfaceNumber - Number identifying this interface
     0x00,                      // bAlternateSetting - A number that identifies a descriptor with alternate settings for this bInterfaceNumber.
     0x01,                      // bNumEndpoint - Number of endpoints supported not counting endpoint zero
     0x03,                   // bInterfaceClass - Class code
