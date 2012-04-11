@@ -51,7 +51,7 @@ const char configDescriptor1[]= {
     // Configuration Descriptor
     0x09,                   // bLength             - Descriptor size in bytes
     0x02,                   // bDescriptorType     - The constant CONFIGURATION (02h)
-    0x29,0x00,              // wTotalLength        - The number of bytes in the configuration descriptor and all of its subordinate descriptors
+    0x003B,              // wTotalLength        - The number of bytes in the configuration descriptor and all of its subordinate descriptors
     1,                      // bNumInterfaces      - Number of interfaces in the configuration
     1,                      // bConfigurationValue - Identifier for Set Configuration and Get Configuration requests
     0,                      // iConfiguration      - Index of string descriptor for the configuration
@@ -61,13 +61,13 @@ const char configDescriptor1[]= {
     // Interface Descriptor
     0x09,                   // bLength - Descriptor size in bytes (09h)
     0x04,                   // bDescriptorType - The constant Interface (04h)
-    0,                      // bInterfaceNumber - Number identifying this interface
-    0,                      // bAlternateSetting - A number that identifies a descriptor with alternate settings for this bInterfaceNumber.
-    1,                      // bNumEndpoint - Number of endpoints supported not counting endpoint zero
+    0x01,                      // bInterfaceNumber - Number identifying this interface
+    0x00,                      // bAlternateSetting - A number that identifies a descriptor with alternate settings for this bInterfaceNumber.
+    0x01,                      // bNumEndpoint - Number of endpoints supported not counting endpoint zero
     0x03,                   // bInterfaceClass - Class code
-    0,                      // bInterfaceSubclass - Subclass code
-    0,                      // bInterfaceProtocol - Protocol code
-    0,                      // iInterface - Interface string index
+    0x01,                      // bInterfaceSubclass - Subclass code
+    0x02,                      // bInterfaceProtocol - Protocol code
+    0x00,                      // iInterface - Interface string index
 
     // HID Class-Specific Descriptor
     0x09,                   // bLength - Descriptor size in bytes.
