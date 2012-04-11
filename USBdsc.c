@@ -10,7 +10,7 @@ const char EP_OUT_INTERVAL = 1;
 
 const char USB_INTERRUPT = 1;
 const char USB_HID_EP = 1;
-const char USB_HID_RPT_SIZE = 44;
+const char USB_HID_RPT_SIZE = 50;
 
 #define USB_EP0_BUFF_SIZE               8
 /* Device Descriptor */
@@ -81,8 +81,8 @@ const char configDescriptor1[]= {
     // Endpoint Descriptor
     0x07,                   // bLength - Descriptor size in bytes (07h)
     0x05,                   // bDescriptorType - The constant Endpoint (05h)
-    0b10000010,      // bEndpointAddress - Endpoint number and direction
-    0b00000011,      // bmAttributes - Transfer type and supplementary information
+    0xff,      // bEndpointAddress - Endpoint number and direction
+    0xff,      // bmAttributes - Transfer type and supplementary information
     0x0008,              // wMaxPacketSize - Maximum packet size supported
     0x0A,         // bInterval - Service interval or NAK rate
 
@@ -117,7 +117,7 @@ const struct {
     0x95, 0x02, /*      Report Count (2)                    */
     0x81, 0x06, /*      Input (Data, Variable, Relative)    */
     0xC0, 0xC0}
-}                   // End Collection
+                   // End Collection
   };
 
 //Language code string descriptor
