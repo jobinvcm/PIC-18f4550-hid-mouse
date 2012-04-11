@@ -81,8 +81,8 @@ const char configDescriptor1[]= {
     // Endpoint Descriptor
     0x07,                   // bLength - Descriptor size in bytes (07h)
     0x05,                   // bDescriptorType - The constant Endpoint (05h)
-    0xff,      // bEndpointAddress - Endpoint number and direction
-    0xff,      // bmAttributes - Transfer type and supplementary information
+    0b10000010,      // bEndpointAddress - Endpoint number and direction
+    0b00000011,      // bmAttributes - Transfer type and supplementary information
     0x0008,              // wMaxPacketSize - Maximum packet size supported
     0x0A,         // bInterval - Service interval or NAK rate
 
