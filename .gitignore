@@ -1,0 +1,14 @@
+*.ini
+*.log
+*.dic
+*.mcppi
+*.asm
+*.mcl
+*.cp
+*.cfg
+*.dbg
+*.dct
+*.dlt
+*.hex
+*.lst
+sse.mcppi_callertable.txt
