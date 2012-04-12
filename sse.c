@@ -11,8 +11,8 @@ void interrupt(){
 void main(void){
   ADCON1 |= 0x0F;                         // Configure all ports with analog function as digital
   CMCON  |= 7;                            // Disable comparators
-
-  HID_Enable(&readbuff,&writebuff);       // Enable HID communication
+  TRISB=0xff;
+  HID_Enable(&readbuff,&writebuff);       // Enable HID communication  ,returns nothing
 
   while(1){
     while(!HID_Read())
